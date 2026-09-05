@@ -5,7 +5,7 @@ BEGIN
     if vStroke is NULL THEN
         RAISE NOTICE 'Переменная не содержит никаких значений';
     ELSE
-        RAISE NOTICE 'Переменная содержит никаких значение: %', vStroke;
+        RAISE NOTICE 'Переменная содержит значение: %', vStroke;
     END IF;
 END;
 $$;

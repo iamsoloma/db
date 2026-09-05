@@ -3,7 +3,7 @@ DECLARE
     vStroke constant VARCHAR(8) := 'Сентябрь'; 
     vFlag BOOLEAN := false;
 BEGIN
-    if vStroke LIKE '%е%' THEN
+    if UPPER(vStroke) LIKE '%Е%' THEN
       vFlag = true;
     END IF;
 

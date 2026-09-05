@@ -5,7 +5,7 @@ DECLARE
     vDay VARCHAR(10);
 BEGIN
     vYear = EXTRACT(YEAR FROM vDate);
-    vDay = TO_CHAR(TO_DATE('01.01.'||vYear, 'DD.MM.YYYY'), 'Day');
+    vDay = TO_CHAR(TO_DATE('01.01.'||vYear, 'DD.MM.YYYY'), 'Day'); /*Есть функция*/
     RAISE NOTICE 'В % году 1 января был(а) %', vYear, vDay;
 END;
 $$;
