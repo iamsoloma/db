@@ -2,7 +2,7 @@ DO $$
 DECLARE
     avgSal NUMERIC;
 BEGIN
-    SELECT AVG(sal) into avgSal 
+    SELECT ROUND(AVG(sal), 0) into avgSal 
     from emp.emp 
     where deptno = 20;
 
