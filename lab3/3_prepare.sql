@@ -1,8 +1,8 @@
 ALTER TABLE emp.dept ADD COLUMN IF NOT EXISTS loc text;
 UPDATE emp.dept SET loc = 'NEW YORK' WHERE deptno = 10;
-UPDATE emp.dept SET loc = 'BOSTON' WHERE deptno = 20;
-UPDATE emp.dept SET loc = 'DALLAS' WHERE deptno = 30;
-UPDATE emp.dept SET loc = 'CHICAGO' WHERE deptno = 40;
+UPDATE emp.dept SET loc = 'DALLAS' WHERE deptno = 20;
+UPDATE emp.dept SET loc = 'CHICAGO' WHERE deptno = 30;
+UPDATE emp.dept SET loc = 'BOSTON' WHERE deptno = 40;
 
 CREATE TABLE IF NOT EXISTS emp.newdept (
     deptno integer,
