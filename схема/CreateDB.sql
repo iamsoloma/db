@@ -101,4 +101,3 @@ INSERT INTO emp.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES
 
 --посмотреть всех сотрудников
 select * from emp.emp order by deptno;
-
