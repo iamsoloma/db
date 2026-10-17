@@ -1,6 +1,7 @@
 DO $$
 DECLARE
-    vCounter numeric;
+    vCounter SMALLINT;
+    vEditions SMALLINT := 0;
 BEGIN
     FOR i IN 1..10 LOOP
 
@@ -8,8 +9,11 @@ BEGIN
     WHERE numcol1 = i;
 
     GET DIAGNOSTICS vCounter = ROW_COUNT;
-    --RAISE NOTICE '[%]: % обновлений', i, vCounter;
+    vEditions = vEditions + vCounter;
+    RAISE NOTICE '[%]: % обновлений', i, vCounter;
     EXIT WHEN vCounter = 0;
 
     END LOOP;
+
+    RAISE NOTICE '% обновлений', vEditions;
 END $$;

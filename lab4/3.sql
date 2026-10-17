@@ -3,7 +3,7 @@ DECLARE
     vStartMonth DATE := date_trunc('month', current_date);
     vStartNextMonth DATE := vStartMonth + interval '1 month';
     
-    vDays NUMERIC = 0;
+    vDays SMALLINT = 0;
 BEGIN
 
     WHILE vStartMonth < vStartNextMonth LOOP

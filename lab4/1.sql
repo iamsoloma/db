@@ -1,6 +1,6 @@
 DO $$
 DECLARE
-    vCounter numeric := 0;
+    vCounter smallint := 0;
 BEGIN
     LOOP
         vCounter = vCounter + 1;
