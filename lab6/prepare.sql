@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS mylog (
     trigname VARCHAR(30)
 )
 
-CREATE TABLE emp3 (
+CREATE TABLE IF NOT EXISTS emp3 (
     empno integer NOT NULL,
     ename text NOT null,
     job text NOT null,

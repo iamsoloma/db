@@ -14,3 +14,4 @@ DELETE FROM emp3 WHERE empno = 2;
 UPDATE emp3 SET comm = 1000;
 
 SELECT * FROM mylog;
+SELECT * FROM emp3;
