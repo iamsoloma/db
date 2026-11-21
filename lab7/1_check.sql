@@ -7,7 +7,7 @@ BEGIN
     RAISE NOTICE 'Результат: %', vRes;
 
     RAISE NOTICE 'Клерк с зп более 1301';
-    vRes = getEmpInfo(colJob => 'job', pJob => 'CLERK', pSal => 1301);
+    vRes = getEmpInfo(colJob => 'job', pJob => 'CLERK', pSal => 1327);
     RAISE NOTICE 'Результат: %', vRes;
 
     
